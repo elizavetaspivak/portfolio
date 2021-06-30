@@ -1,6 +1,6 @@
-import style from './Work.module.scss'
+import style from './Project.module.scss'
 
-export function Work(props) {
+export function Project(props) {
     return (
         <div className={style.work}>
             <div className={style.image} style={props.style}>

@@ -1,8 +1,7 @@
-.title{
-    margin-bottom: 30px;
-}
+.title {
+  margin-bottom: 30px;
 
-.title h2{
+  h2 {
     font-size: 50px;
     font-weight: 600;
     line-height: 42px;
@@ -10,10 +9,11 @@
     font-family: 'Poppins', sans-serif;
     background: #fd4766;
     background: linear-gradient(
-            120deg
-            ,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--color-primary)",endColorstr="var(--color-secondary)",GradientType=1);
+                    120deg, #1c99fe 20.69%, #7644ff 50.19%, #fd4766 79.69%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--color-primary)", endColorstr="var(--color-secondary)", GradientType=1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+  }
+
 }

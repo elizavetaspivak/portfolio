@@ -1,11 +1,11 @@
-import style from './MyWorks.module.scss'
-import styleContainer from '../common/styles/Container.module.css'
-import {Work} from './Work/Work';
+import style from './Projects.module.scss'
+import styleContainer from '../common/styles/Container.module.scss'
+import {Project} from './Project/Project';
 import {Title} from '../common/components/Title';
 import todolistImage from '../assets/image/todolist.png'
 import socialNetworkImage from '../assets/image/socialnetwork.png'
 
-export function MyWorks() {
+export function Projects() {
     const socialNetwork = {
         backgroundImage: `url(${socialNetworkImage})`
     }
@@ -21,10 +21,10 @@ export function MyWorks() {
             <div className={`${styleContainer.container} ${style.worksContainer}`}>
                 <Title title={'My Works'}/>
                 <div className={style.skills}>
-                    <Work style={socialNetwork} title={'Social Network'}
-                          description={' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsam natus reprehenderit voluptatem voluptatum!'}/>
-                    <Work style={todolist} title={'Todo List'}
-                          description={' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsam natus reprehenderit voluptatem voluptatum!'}/>
+                    <Project style={socialNetwork} title={'Social Network'}
+                             description={' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsam natus reprehenderit voluptatem voluptatum!'}/>
+                    <Project style={todolist} title={'Todo List'}
+                             description={' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsam natus reprehenderit voluptatem voluptatum!'}/>
                 </div>
             </div>
         </div>
