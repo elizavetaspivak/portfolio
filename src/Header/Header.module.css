@@ -1,0 +1,31 @@
+.header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    height: 70px;
+    min-width: 100%;
+    background-color: transparent;
+    width: 100%;
+    z-index: 10;
+}
+
+.header:before{
+    position: absolute;
+    content: '';
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.9;
+}
+
+@media (max-width: 740px) {
+    .header{
+        justify-content: center;
+    }
+}

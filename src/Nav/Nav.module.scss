@@ -1,0 +1,32 @@
+@import '../common/styles/sass/';
+
+.nav {
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    z-index: 1;
+}
+
+.nav a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.nav a:hover{
+    color: #fd4766;
+    transition: all 0.4s ease;
+}
+
+.active{
+    color: #fd4766;
+    transition: all 0.4s ease;
+}
