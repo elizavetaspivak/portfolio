@@ -1,4 +1,4 @@
-import style from './Footer.module.css'
+import style from './Footer.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
 import {Title} from '../common/components/Title';
 

@@ -1,4 +1,4 @@
-import style from './Work.module.css'
+import style from './Work.module.scss'
 
 export function Work(props) {
     return (

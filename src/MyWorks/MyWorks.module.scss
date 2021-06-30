@@ -1,29 +1,22 @@
-.worksBlock{
-    min-height: 100vh;
-    background-color: #101010;
-    padding: 100px 0;
-}
+.worksBlock {
+  min-height: 100vh;
+  background-color: #101010;
+  padding: 100px 0;
 
-.worksContainer{
+  .worksContainer {
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-}
 
-.skills{
-    border: 1px solid gray;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-@media (max-width: 1010px) {
-    .skills{
+    .skills {
+      border: 1px solid gray;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media (max-width: 1010px) {
         justify-content: center;
+      }
     }
-    .worksBlock{
-        height: auto;
-        min-height: 100vh;
-    }
+  }
 }

@@ -1,4 +1,4 @@
-import style from './RemoteWork.module.css'
+import style from './RemoteWork.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
 import {Title} from '../common/components/Title';
 

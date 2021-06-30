@@ -1,0 +1,31 @@
+.footerBlock{
+    height: 50vh;
+    background-color: #191919;
+    padding: 80px 0;
+    @media (max-width: 500px){
+        height: auto;
+    }
+    .footerContainer{
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    .href{
+        width: 500px;
+        height: 20%;
+        border: 1px solid gray;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 635px){
+            width: 100%;
+        }
+        .hrefItem{
+            height: 50px;
+            width: 50px;
+            background-color: gray;
+        }
+    }
+    .rightsReserved{
+        color: #757575;
+    }
+}
+}
