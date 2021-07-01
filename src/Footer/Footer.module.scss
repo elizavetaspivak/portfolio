@@ -1,6 +1,8 @@
+@import "src/common/styles/sass/variables.sccs";
+
 .footerBlock{
     height: 50vh;
-    background-color: #191919;
+    background-color: $greyBackColor;
     padding: 80px 0;
     @media (max-width: 500px){
         height: auto;
@@ -19,13 +21,17 @@
             width: 100%;
         }
         .hrefItem{
-            height: 50px;
-            width: 50px;
-            background-color: gray;
+            font-size: 45px;
+            color: #4a4a4a;
+            transition: all 1s ease;
+            &:hover{
+                color: #fd4766;
+            }
         }
     }
     .rightsReserved{
-        color: #757575;
+        padding-top: 20px;
+        color: $descriptionColor;
     }
 }
 }

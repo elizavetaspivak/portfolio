@@ -1,3 +1,5 @@
+@import "src/common/styles/sass/variables.sccs";
+
 .nav {
   width: 80%;
   margin: 0 auto;
@@ -14,17 +16,17 @@
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
-    color: #fff;
+    color: $textColor;
     transition: all 0.4s ease;
   }
 
   &:hover {
-    color: #fd4766;
+    color: $primaryColor;
     transition: all 0.4s ease;
   }
 
   .active {
-    color: #fd4766;
+    color: $primaryColor;
     transition: all 0.4s ease;
   }
 }

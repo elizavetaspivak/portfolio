@@ -1,6 +1,8 @@
+@import "src/common/styles/sass/variables.sccs";
+
 .skillsBlock{
     min-height: 100vh;
-    background-color: #191919;
+    background-color: $greyBackColor;
     padding: 100px 0;
     @media (max-width: 656px) {
         height: auto;

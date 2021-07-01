@@ -1,6 +1,8 @@
+@import "src/common/styles/sass/variables.sccs";
+
 .remoteWorkBlock {
     min-height: 35vh;
-    background-color: #191919;
+    background-color: $greyBackColor;
     padding: 60px 0;
     @media (max-width: 500px) {
         height: auto;
@@ -10,23 +12,25 @@
         align-items: center;
         flex-direction: column;
         justify-content: flex-start;
-
         .hire {
             font-family: 'Poppins', sans-serif;
             transition: all 1s ease;
-            color: #fff;
+            color: $textColor;
             font-size: 16px;
             padding: 16px 40px;
             border-radius: 500px;
             font-weight: 500;
             background-size: 152% 100%;
-            background: #fd4766;
-            border: 2px solid #fd4766;
-            cursor: pointer;
-
+            background: $primaryColor;
+            border: 2px solid $primaryColor;
+            text-decoration: none;
             &:hover {
                 background: black;
-                color: #fd4766;
+                color: $primaryColor;
+                text-decoration: none;
+            }
+            &:visited{
+                text-decoration: none;
             }
         }
     }

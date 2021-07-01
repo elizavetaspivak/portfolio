@@ -1,0 +1,8 @@
+$textColor: #fff;
+$primaryColor: #fd4766;
+$backGradientColor: linear-gradient(
+                120deg, #1c99fe 20.69%, #7644ff 50.19%, #fd4766 79.69%);
+$greyBackColor: #191919;
+$blackBackColor: #101010;
+$blackBlockColor: #010001;
+$descriptionColor: #757575;
