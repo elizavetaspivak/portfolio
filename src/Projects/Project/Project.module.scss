@@ -3,17 +3,14 @@
 
 .work {
   width: 500px;
-  border: 1px solid grey;
-  background-color: $blackBlockColor;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  border: 1px solid grey;
+  background-color: $blackBlockColor;
   border-radius: 6px 6px 6px 6px;
   transition: all 0.4s ease;
 
   &:hover {
-    transform: translateY(-5px);
     transition: all 0.4s ease;
     -moz-box-shadow: 5px 5px 25px rgba(255, 0, 0, 0.2);
     -webkit-box-shadow: 0 0 25px rgba(255, 0, 0, 0.2);
@@ -21,11 +18,14 @@
   }
 
   .image {
-    position: relative;
     height: 300px;
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
     border-radius: 6px 6px 0 0;
     -moz-transition: background-color 0.8s 0.1s ease;
     -o-transition: background-color 0.8s 0.1s ease;
@@ -46,42 +46,6 @@
       right: 0;
       opacity: 0.6;
     }
-
-    .showBtn {
-      position: relative;
-      top: 45%;
-      opacity: 0;
-      transition: all 1s ease;
-      color: $textColor;
-      font-size: 16px;
-      padding: 16px 40px;
-      border-radius: 500px;
-      font-weight: 500;
-      background: $primaryColor;
-      border: 2px solid $primaryColor;
-      cursor: pointer;
-      font-family: 'Poppins', sans-serif;
-      z-index: 1;
-      text-decoration: none;
-      margin-bottom: 60px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      max-width: 160px;
-      width: 100%;
-      outline: none;
-
-      &:hover {
-        background: black;
-        color: $primaryColor;
-        opacity: 1;
-        transition: all 1s ease;
-      }
-    }
-  }
-
-  &:hover .showBtn {
-    opacity: 1;
-    transition: all 1s ease;
   }
 
   .info {
