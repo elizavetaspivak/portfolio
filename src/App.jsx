@@ -21,6 +21,10 @@ function App() {
 
     const [open, setOpen] = React.useState(false);
 
+    const setOpenValue = (isOpenValue) => {
+        setOpen(isOpenValue)
+    }
+
     return (
         <div className="App">
             <div id={'home'} className="mainPhoto" style={main}>
@@ -30,7 +34,7 @@ function App() {
             <Skills/>
             <Projects/>
             <RemoteWork/>
-            <Contacts setOpen={setOpen}/>
+            <Contacts setOpen={setOpenValue}/>
             <SuccesSnackbar isOpen={open} setOpen={setOpen}/>
             <Footer/>
             <ScrollArrow/>

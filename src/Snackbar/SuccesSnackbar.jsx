@@ -18,7 +18,7 @@ export default function SuccesSnackbar(props) {
             return;
         }
 
-        props.setOpen(false);
+        props.setOpenValue(false);
     };
 
     return (
