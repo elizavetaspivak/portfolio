@@ -27,9 +27,8 @@ export function Contacts() {
             text: formData.formText
         })
             .then(() => {
-                alert('Успешно отправлено')
+                SetFormData({...formData, formName: '', formEmail: '', formText: ''})
             })
-        alert()
     }
 
     return (

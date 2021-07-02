@@ -39,18 +39,20 @@
   .mainPhoto {
     position: relative;
     z-index: 1;
+    -moz-box-shadow: 0 0 80px rgba(255,101,101,0.4);
+    -webkit-box-shadow: 0 0 80px rgba(255,101,101,0.4);
+    box-shadow: 0 0 80px rgba(255,101,101,0.4);
     .myImage {
       height: 400px;
       width: 350px;
       background-position: 80% 0;
-      background-image: url('../assets/image/myphoto.JPG');
+      background-image: url('../assets/image/my.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       z-index: 3;
       @media screen and (max-width: 1143px) {
-        height: 260px;
-        width: 360px;
+
         //transition: .5s;
       }
     }
