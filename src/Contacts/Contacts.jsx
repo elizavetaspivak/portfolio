@@ -27,7 +27,7 @@ export function Contacts() {
             text: formData.formText
         })
             .then(() => {
-                SetFormData({})
+                SetFormData({formName: "", formEmail: "", formText: ""})
             })
     }
 
@@ -37,9 +37,9 @@ export function Contacts() {
                 <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                     <Title title={'Contacts'}/>
                     <form onSubmit={e => sendEmail(e)} className={style.formContainer}>
-                        <input className={style.inputName} placeholder={'Name'} type="text" onChange={onChangeName}/>
-                        <input className={style.inputEmail} placeholder={'Email'} type="text" onChange={onChangeEmail}/>
-                        <textarea placeholder={'Your message'} className={style.textArea}
+                        <input className={style.inputName} placeholder={'Name'} type="text" value={formData.formName} onChange={onChangeName}/>
+                        <input className={style.inputEmail} placeholder={'Email'} type="text" value={formData.formEmail} onChange={onChangeEmail}/>
+                        <textarea placeholder={'Your message'} value={formData.formText} className={style.textArea}
                                   onChange={onChangeText}></textarea>
                         <button className={style.submit} type="submit">SUBMIT</button>
                     </form>
