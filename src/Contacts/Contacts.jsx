@@ -21,7 +21,7 @@ export function Contacts() {
 
     function sendEmail(e) {
         e.preventDefault();
-        axios.post('http://localhost:3010/sendMessage', {
+        axios.post('https://smtp-portfolio-nodejs-server.herokuapp.com/sendMessage', {
             name: formData.formName,
             email: formData.formEmail,
             text: formData.formText
