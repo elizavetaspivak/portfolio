@@ -26,11 +26,13 @@ export function Contacts(props) {
             email: formData.formEmail,
             text: formData.formText
         })
-            .then(() => {
+            .then((res) => {
                 SetFormData({formName: "", formEmail: "", formText: ""})
                 props.setOpen(true)
+                console.log(res)
             })
     }
+
 
     return (
         <div id='contacts' className={style.contactsBlock}>
