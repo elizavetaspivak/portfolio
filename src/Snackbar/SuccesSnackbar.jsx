@@ -7,7 +7,6 @@ function Alert(props) {
 }
 
 export default function SuccesSnackbar(props) {
-    const classes = useStyles();
     // const [open, setOpen] = React.useState(false);
 
     const handleClick = () => {
@@ -23,7 +22,7 @@ export default function SuccesSnackbar(props) {
     };
 
     return (
-        <div className={classes.root}>
+        <div>
             <Snackbar open={props.isOpen} autoHideDuration={6000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity="success">
                     This is a success message!

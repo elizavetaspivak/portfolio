@@ -31,8 +31,8 @@ function App() {
             <Projects/>
             <RemoteWork/>
             <Contacts setOpen={setOpen}/>
-            <Footer/>
             <SuccesSnackbar isOpen={open} setOpen={setOpen}/>
+            <Footer/>
             <ScrollArrow/>
         </div>
     );
