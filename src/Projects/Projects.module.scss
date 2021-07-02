@@ -4,7 +4,10 @@
   min-height: 100vh;
   background-color: $blackBackColor;
   padding: 100px 0;
-
+  @media screen and (max-width: 1250px){
+    align-items: center;
+    justify-content: center;
+  }
   .worksContainer {
     align-items: center;
     flex-direction: column;
@@ -15,8 +18,13 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      @media (max-width: 1010px) {
+      @media (max-width: 1250px) {
+        align-items: center;
         justify-content: center;
+      }
+      @media (max-width: 1010px) {
+          align-items: center;
+          justify-content: center;
       }
     }
   }

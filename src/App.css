@@ -40,6 +40,12 @@
   opacity: 1;
 }
 
+@media screen and (max-width: 690px){
+  .scrollTop{
+    right: 10px;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

@@ -10,6 +10,9 @@
     text-align: center;
     border-radius: 6px;
     transition: all 0.4s ease;
+    @media screen and (max-width: 1250px){
+        margin-bottom: 40px;
+    }
     &:hover{
          transform: translateY(-5px);
          transition: all 0.8s ease;
@@ -30,6 +33,7 @@
         }
     }
     .info{
+        width: 235px;
         padding: 20px;
         text-align: left;
         h3{
@@ -39,10 +43,16 @@
             font-weight: 700;
             font-size: 18px;
         }
-
-        span{
-            margin: 0;
+        .description{
             color: $descriptionColor;
+            flex-wrap: wrap;
+            .li {
+                display: flex;
+                justify-content: left;
+                color: $textColor;
+                font-family: 'Poppins', sans-serif;
+                word-break: break-word;
+            }
         }
 
     }

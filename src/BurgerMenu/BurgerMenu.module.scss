@@ -58,7 +58,12 @@
     top: 20px;
     right: 20px;
     font-size: 25px;
-    color: #fd4766;
+    color: $descriptionColor;
+    transition: all 0.4s ease;
+  }
+  .pinkBtn{
+    color: $primaryColor;
+    transition: all 0.4s ease;
   }
 
   @media screen and (min-width: 400px){

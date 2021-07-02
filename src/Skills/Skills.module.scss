@@ -4,9 +4,6 @@
     min-height: 100vh;
     background-color: $greyBackColor;
     padding: 100px 0;
-    @media (max-width: 656px) {
-        height: auto;
-    }
 .skillsContainer{
     align-items: center;
     flex-direction: column;
@@ -19,7 +16,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        @media (max-width: 656px){
+        @media screen and (max-width: 625px){
             justify-content: center;
         }
     }

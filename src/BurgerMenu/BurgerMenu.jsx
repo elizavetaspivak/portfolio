@@ -1,11 +1,11 @@
 import style from './BurgerMenu.module.scss'
 import {Link} from 'react-scroll'
 import {useState} from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { fa } from '@fortawesome/free-brands-svg-icons'
 
 export function BurgerMenu() {
     let [menuIsOpen, setMenuIsOpen] = useState(false)
+
+    const grayKnopka = 'fas fa-hamburger'
 
     function onBurgerBtnClick(){
         setMenuIsOpen(!menuIsOpen)
@@ -46,7 +46,7 @@ export function BurgerMenu() {
 
                 <a href="https://docviewer.yandex.by/view/786292263/?*=nxu4tCLpbsXkf%2FINmFkJ5ocTfux7InVybCI6InlhLWRpc2s6Ly8vZGlzay9TcGl2YWtfQ1YucGRmIiwidGl0bGUiOiJTcGl2YWtfQ1YucGRmIiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI3ODYyOTIyNjMiLCJ0cyI6MTYyNTA0NDYxMjMwMiwieXUiOiI2MTQzODkzMzkxNjE1NzM5NDU2In0%3D">CV</a>
             </div>
-            <div onClick={onBurgerBtnClick} className={style.burgerBtn}>
+            <div onClick={onBurgerBtnClick} className={menuIsOpen ? `${style.burgerBtn} ${style.pinkBtn}`: style.burgerBtn }>
                 <i className="fas fa-hamburger"></i>
             </div>
         </div>

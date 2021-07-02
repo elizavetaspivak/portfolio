@@ -8,7 +8,14 @@ export function Skill(props) {
             </div>
             <div className={style.info}>
                 <h3>{props.title}</h3>
-                <span className={style.description}>{props.description}</span>
+                <div className={style.description}>
+                    {
+                        props.description.map((someSkill,index) =>
+                            <p
+                                key={index}
+                                className={style.skillDesl}
+                            > {someSkill} </p>)}
+                </div>
             </div>
         </div>
     )

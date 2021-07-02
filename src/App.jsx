@@ -11,6 +11,7 @@ import mainImage from './assets/image/main.jpg';
 import ScrollArrow from './ScrollToTop';
 import SuccesSnackbar from "./Snackbar/SuccesSnackbar";
 import ErrorSnackbar from "./Snackbar/ErrorSnackbar";
+import {LinearProgress} from "@material-ui/core";
 
 const main = {
     backgroundImage: `url(${mainImage})`,

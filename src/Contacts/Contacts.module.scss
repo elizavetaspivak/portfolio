@@ -54,7 +54,7 @@
         border-radius: 0;
         font-weight: 400;
         font-family: 'Poppins', sans-serif;
-        color: #535353;
+        color: $textColor;
         transition: all 0.9s ease;
         height: calc(1.5em + .75rem + 2px);
         caret-color: white;
@@ -76,7 +76,7 @@
         padding: 0 15px;
         border-radius: 0;
         font-family: 'Poppins', sans-serif;
-        color: #535353;
+        color: $textColor;
         caret-color: white;
         transition: all 0.4s ease-in-out;
 
@@ -96,7 +96,7 @@
         padding: 10px 15px;
         border-radius: 0;
         font-family: 'Poppins', sans-serif;
-        color: #535353;
+        color: $textColor;
         caret-color: white;
         transition: all 0.4s ease-in-out;
 
