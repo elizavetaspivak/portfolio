@@ -6,9 +6,10 @@ function Alert(props) {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
 
-export default function SuccesSnackbar(props) {
+export default function ErrorSnackbar(props) {
+
     const handleClick = () => {
-        props.setOpenSucces(props.isOpen);
+        props.setOpenError(props.isOpen);
     };
 
     const handleClose = (event, reason) => {
@@ -16,14 +17,14 @@ export default function SuccesSnackbar(props) {
             return;
         }
 
-        props.setOpenSucces(false);
+        props.setOpenError(false);
     };
 
     return (
         <div>
             <Snackbar open={props.isOpen} autoHideDuration={6000} onClose={handleClose}>
-                <Alert onClose={handleClose} severity="success">
-                    Your message was sent successfully
+                <Alert onClose={handleClose} severity="error">
+                    Check the correctness of the entered data or try again later
                 </Alert>
             </Snackbar>
             {/*<Alert severity="success">This is a success message!</Alert>*/}

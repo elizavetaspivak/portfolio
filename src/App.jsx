@@ -10,6 +10,7 @@ import {Footer} from './Footer/Footer';
 import mainImage from './assets/image/main.jpg';
 import ScrollArrow from './ScrollToTop';
 import SuccesSnackbar from "./Snackbar/SuccesSnackbar";
+import ErrorSnackbar from "./Snackbar/ErrorSnackbar";
 
 const main = {
     backgroundImage: `url(${mainImage})`,
@@ -19,11 +20,17 @@ const main = {
 
 function App() {
 
-    const [open, setOpen] = React.useState(false);
+    const [openSuccesMessage, setOpenSuccesMessage] = React.useState(false);
+    const [openErrorMessage, setOpenErrorMessage] = React.useState(false);
 
-    const setOpenValue = (isOpenValue) => {
-        setOpen(isOpenValue)
+    const setOpenSucces = (isOpenValue) => {
+        setOpenSuccesMessage(isOpenValue)
     }
+
+    const setOpenError = (isOpenValue) => {
+        setOpenErrorMessage(isOpenValue)
+    }
+
 
     return (
         <div className="App">
@@ -34,8 +41,9 @@ function App() {
             <Skills/>
             <Projects/>
             <RemoteWork/>
-            <Contacts setOpen={setOpenValue}/>
-            <SuccesSnackbar isOpen={open} setOpen={setOpen}/>
+            <Contacts setOpenSucces={setOpenSucces} setOpenError={setOpenError}/>
+            <SuccesSnackbar isOpen={openSuccesMessage} setOpenSucces={setOpenSucces}/>
+            <ErrorSnackbar isOpen={openErrorMessage} setOpenError={setOpenError}/>
             <Footer/>
             <ScrollArrow/>
         </div>

@@ -28,8 +28,13 @@ export function Contacts(props) {
         })
             .then((res) => {
                 SetFormData({formName: "", formEmail: "", formText: ""})
-                props.setOpen(true)
+                props.setOpenSucces(true)
                 console.log(res)
+            })
+            .catch((res) => {
+                if(res !== 'Ok!'){
+                    props.setOpenError(true)
+                }
             })
     }
 
