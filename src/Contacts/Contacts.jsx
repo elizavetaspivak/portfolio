@@ -27,7 +27,7 @@ export function Contacts() {
             text: formData.formText
         })
             .then(() => {
-                SetFormData({...formData, formName: '', formEmail: '', formText: ''})
+                SetFormData({})
             })
     }
 
