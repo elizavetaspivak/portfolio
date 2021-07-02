@@ -9,6 +9,7 @@ import {Contacts} from './Contacts/Contacts';
 import {Footer} from './Footer/Footer';
 import mainImage from './assets/image/main.jpg';
 import ScrollArrow from './ScrollToTop';
+import SuccesSnackbar from "./Snackbar/SuccesSnackbar";
 
 const main = {
     backgroundImage: `url(${mainImage})`,
@@ -17,6 +18,8 @@ const main = {
 }
 
 function App() {
+
+    const [open, setOpen] = React.useState(false);
 
     return (
         <div className="App">
@@ -27,8 +30,9 @@ function App() {
             <Skills/>
             <Projects/>
             <RemoteWork/>
-            <Contacts/>
+            <Contacts setOpen={setOpen}/>
             <Footer/>
+            <SuccesSnackbar isOpen={open} setOpen={setOpen}/>
             <ScrollArrow/>
         </div>
     );

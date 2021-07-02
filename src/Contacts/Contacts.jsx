@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade'
 import {useState} from "react";
 import axios from "axios";
 
-export function Contacts() {
+export function Contacts(props) {
     const [formData, SetFormData] = useState({formName: "", formEmail: "", formText: ""})
     const onChangeName = (e) => {
         SetFormData({...formData, formName: e.currentTarget.value})
@@ -28,6 +28,7 @@ export function Contacts() {
         })
             .then(() => {
                 SetFormData({formName: "", formEmail: "", formText: ""})
+                props.setOpen(true)
             })
     }
 
