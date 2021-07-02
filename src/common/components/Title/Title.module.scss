@@ -1,4 +1,4 @@
-@import "../styles/sass/variables.sccs";
+@import "../../styles/sass/variables.sccs";
 
 .title {
   margin-bottom: 30px;
@@ -6,7 +6,7 @@
   h2 {
     font-size: 50px;
     font-weight: 600;
-    line-height: 42px;
+    line-height: 60px;
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background: $primaryColor;

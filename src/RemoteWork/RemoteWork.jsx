@@ -1,6 +1,6 @@
 import style from './RemoteWork.module.scss'
 import styleContainer from '../common/styles/Container.module.scss'
-import {Title} from '../common/components/Title';
+import {Title} from '../common/components/Title/Title';
 import Fade from 'react-reveal/Fade'
 import Button from "../common/components/Button/Button";
 

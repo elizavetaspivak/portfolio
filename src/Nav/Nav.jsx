@@ -12,7 +12,7 @@ export function Nav() {
                   smooth={true}
                   offset={1}
                   duration={500}
-            > Home</Link>
+            > Main</Link>
             <Link activeClass={style.active}
                   to='skills'
                   spy={true}

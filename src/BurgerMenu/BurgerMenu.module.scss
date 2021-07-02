@@ -1,0 +1,67 @@
+@import "src/common/styles/sass/variables.sccs";
+
+.BurgerNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  .BurgerNavItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background-color: black;
+    opacity: 0.9;
+    padding: 20px;
+    transform: translate(0, -200px);
+    transition: 0.7s;
+    a {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      color: $textColor;
+      transition: all 0.4s ease;
+    }
+
+    &:hover {
+      color: $primaryColor;
+      transition: all 0.4s ease;
+    }
+
+    .active {
+      color: $primaryColor;
+      transition: all 0.4s ease;
+    }
+  }
+  .show{
+  transform: translate(0, 0);
+  }
+
+  .burgerBtn{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    color: #fd4766;
+  }
+
+  @media screen and (min-width: 400px){
+      display: none;
+  }
+}

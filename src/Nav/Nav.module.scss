@@ -29,4 +29,7 @@
     color: $primaryColor;
     transition: all 0.4s ease;
   }
+  @media screen and (max-width: 400px){
+    display: none;
+  }
 }

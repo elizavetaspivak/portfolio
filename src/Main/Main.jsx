@@ -33,7 +33,7 @@ export function Main() {
                     <span>Hi There</span>
                     <h1>I am Elizaveta Spivak</h1>
                     <ReactTypingEffect speed={100} eraseSpeed={40} eraseDelay={3500} typingDelay={350}
-                        text={["A Frontend Developer.", "World!"]}
+                        text={["A Front-End Developer."]}
                     />
                 </div>
                 <Tilt className="Tilt" options={{ max : 25 }}  >

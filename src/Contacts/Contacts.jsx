@@ -1,21 +1,50 @@
 import style from './Contacts.module.scss'
 import styleContainer from '../common/styles/Container.module.scss'
-import {Title} from '../common/components/Title';
+import {Title} from '../common/components/Title/Title';
 import Fade from 'react-reveal/Fade'
+import {useState} from "react";
+import axios from "axios";
 
 export function Contacts() {
+    const [formData, SetFormData] = useState({formName: "", formEmail: "", formText: ""})
+    const onChangeName = (e) => {
+        SetFormData({...formData, formName: e.currentTarget.value})
+    }
+
+    const onChangeEmail = (e) => {
+        SetFormData({...formData, formEmail: e.currentTarget.value})
+    }
+
+    const onChangeText = (e) => {
+        SetFormData({...formData, formText: e.currentTarget.value})
+    }
+
+    function sendEmail(e) {
+        e.preventDefault();
+        axios.post('http://localhost:3010/sendMessage', {
+            name: formData.formName,
+            email: formData.formEmail,
+            text: formData.formText
+        })
+            .then(() => {
+                alert('Успешно отправлено')
+            })
+        alert()
+    }
+
     return (
         <div id='contacts' className={style.contactsBlock}>
             <Fade bottom>
-            <div className={`${styleContainer.container} ${style.contactsContainer}`}>
-                <Title title={'Contacts'}/>
-                <form className={style.formContainer}>
-                    <input className={style.inputName} placeholder={'Name'} type="text"/>
-                    <input className={style.inputEmail} placeholder={'Email'} type="text"/>
-                    <textarea placeholder={'Your message'} className={style.textArea}></textarea>
-                </form>
-                <button className={style.submit} type="submit">SUBMIT</button>
-            </div>
+                <div className={`${styleContainer.container} ${style.contactsContainer}`}>
+                    <Title title={'Contacts'}/>
+                    <form onSubmit={e => sendEmail(e)} className={style.formContainer}>
+                        <input className={style.inputName} placeholder={'Name'} type="text" onChange={onChangeName}/>
+                        <input className={style.inputEmail} placeholder={'Email'} type="text" onChange={onChangeEmail}/>
+                        <textarea placeholder={'Your message'} className={style.textArea}
+                                  onChange={onChangeText}></textarea>
+                        <button className={style.submit} type="submit">SUBMIT</button>
+                    </form>
+                </div>
             </Fade>
         </div>
     )

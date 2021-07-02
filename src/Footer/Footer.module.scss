@@ -1,7 +1,7 @@
 @import "src/common/styles/sass/variables.sccs";
 
 .footerBlock{
-    height: 50vh;
+    min-height: 50vh;
     background-color: $greyBackColor;
     padding: 80px 0;
     @media (max-width: 500px){
@@ -14,7 +14,6 @@
     .href{
         width: 500px;
         height: 20%;
-        border: 1px solid gray;
         display: flex;
         justify-content: space-between;
         @media (max-width: 635px){

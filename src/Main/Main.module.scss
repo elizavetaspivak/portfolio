@@ -37,23 +37,22 @@
     }
   }
   .mainPhoto {
-    height: 400px;
-    width: 350px;
     position: relative;
     z-index: 1;
     .myImage {
       height: 400px;
       width: 350px;
       background-position: 80% 0;
-      @media screen and (max-width: 1143px) {
-        height: 260px;
-        width: 360px;
-        transition: .5s;
-      }
       background-image: url('../assets/image/myphoto.JPG');
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
       z-index: 3;
+      @media screen and (max-width: 1143px) {
+        height: 260px;
+        width: 360px;
+        //transition: .5s;
+      }
     }
   }
 }
