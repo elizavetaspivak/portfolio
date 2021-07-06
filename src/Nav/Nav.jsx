@@ -35,7 +35,7 @@ export function Nav() {
                   duration={500}
             > Contacts</Link>
 
-            <a href="https://docviewer.yandex.by/view/786292263/?*=nxu4tCLpbsXkf%2FINmFkJ5ocTfux7InVybCI6InlhLWRpc2s6Ly8vZGlzay9TcGl2YWtfQ1YucGRmIiwidGl0bGUiOiJTcGl2YWtfQ1YucGRmIiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI3ODYyOTIyNjMiLCJ0cyI6MTYyNTA0NDYxMjMwMiwieXUiOiI2MTQzODkzMzkxNjE1NzM5NDU2In0%3D">CV</a>
+            <a href="https://docviewer.yandex.ru/view/786292263/?*=qZxXziyAv%2FCIqb04nOTXb1OIiHZ7InVybCI6InlhLWRpc2s6Ly8vZGlzay9TcGl2YWtfQ1YucGRmIiwidGl0bGUiOiJTcGl2YWtfQ1YucGRmIiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI3ODYyOTIyNjMiLCJ0cyI6MTYyNTU1OTgxNTk5NywieXUiOiI2MTQzODkzMzkxNjE1NzM5NDU2In0%3D">CV</a>
         </div>
     )
 }
