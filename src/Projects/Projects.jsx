@@ -25,7 +25,7 @@ export function Projects() {
                 <div className={style.skills}>
                     <Project link={'https://github.com/elizavetaspivak/social-network'} style={socialNetwork} title={'Social Network'}
                              description={'SPA with usage AntDesign React UI framework, React Hooks, React Classes, Redux with Redux Thunk and RestAPI.'}/>
-                    <Project link={'https://github.com/elizavetaspivak/homework-todo-incubator'} style={todolist} title={'Todo List'}
+                    <Project link={'https://github.com/elizavetaspivak/todolistsReact'} style={todolist} title={'Todo List'}
                              description={' SPA with usage Material UI React UI framework, React Hooks, Redux with Redux Thunk and RestAPI.'}/>
                 </div>
             </div>
