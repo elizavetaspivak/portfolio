@@ -13,12 +13,12 @@ export function Projects() {
     }
 
     const todolist = {
-        backgroundImage: `url(${learningCardsImage})`,
+        backgroundImage: `url(${todolistImage})`,
         backgroundSize: 'cover'
     }
 
     const learningCards = {
-        backgroundImage: `url(${todolistImage})`,
+        backgroundImage: `url(${learningCardsImage})`,
         backgroundSize: 'cover'
     }
 
