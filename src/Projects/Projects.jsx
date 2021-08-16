@@ -4,6 +4,7 @@ import {Project} from './Project/Project';
 import {Title} from '../common/components/Title/Title';
 import todolistImage from '../assets/image/todolist.png'
 import socialNetworkImage from '../assets/image/socialnetwork.png'
+import learningCardsImage from '../assets/image/Cards.png'
 import Fade from 'react-reveal/Fade'
 
 export function Projects() {
@@ -12,6 +13,11 @@ export function Projects() {
     }
 
     const todolist = {
+        backgroundImage: `url(${learningCardsImage})`,
+        backgroundSize: 'cover'
+    }
+
+    const learningCards = {
         backgroundImage: `url(${todolistImage})`,
         backgroundSize: 'cover'
     }
@@ -26,6 +32,8 @@ export function Projects() {
                     <Project link={'https://github.com/elizavetaspivak/social-network'} style={socialNetwork} title={'Social Network'}
                              description={'SPA with usage AntDesign React UI framework, React Hooks, React Classes, Redux with Redux Thunk and RestAPI.'}/>
                     <Project link={'https://github.com/elizavetaspivak/todolistsReact'} style={todolist} title={'Todo List'}
+                             description={' SPA with usage Material UI React UI framework, React Hooks, Redux with Redux Thunk and RestAPI.'}/>
+                    <Project link={'https://github.com/elizavetaspivak/project-friday-team'} style={learningCards} title={'Learning Cards'}
                              description={' SPA with usage Material UI React UI framework, React Hooks, Redux with Redux Thunk and RestAPI.'}/>
                 </div>
             </div>
